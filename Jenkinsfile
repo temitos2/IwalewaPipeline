@@ -10,7 +10,7 @@ pipeline {
 
     post {
       always {
-        archiveArtifacts artifacts: 'MyGod/*', fingerprint: true
+        archiveArtifacts artifacts: 'build.xml/*', fingerprint: true
       }
 
    }
