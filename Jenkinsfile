@@ -2,7 +2,7 @@ pipeline {
     agent { docker 'php' }
 
     options {
-      buildDiscarder(logRotator(numTokeepStr: '2', artifactNumTokeepStr: '1'))
+      buildDiscarder(logRotator(numToKeepStr: '2', artifactNumToKeepStr: '1'))
     }   
     stages {
         stage('build') {
