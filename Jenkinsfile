@@ -7,6 +7,7 @@ pipeline {
           sayHello 'Awesome God' 
         }
 
+   }
     agent { docker 'php' }
 
     options {
