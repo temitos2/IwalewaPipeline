@@ -6,5 +6,8 @@ pipeline {
                 sh 'php --version'
             }
         }
-    }
+    post {
+      always {
+        archive 'MyGod/*'
+      }
 }
