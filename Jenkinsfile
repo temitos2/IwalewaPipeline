@@ -4,8 +4,10 @@ pipeline {
         stage('build') {
             steps {
                 sh 'php --version'
+              }
             }
         }
+
     post {
       always {
         archive 'MyGod/*'
