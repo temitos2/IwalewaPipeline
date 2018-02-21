@@ -10,7 +10,7 @@ pipeline {
 
     post {
       always {
-        archive 'MyGod/*'
+        archiveArtifacts artifacts: 'MyGod/*', fingerprint: true
       }
 
    }
