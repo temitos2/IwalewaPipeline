@@ -10,4 +10,6 @@ pipeline {
       always {
         archive 'MyGod/*'
       }
+
+   }
 }
