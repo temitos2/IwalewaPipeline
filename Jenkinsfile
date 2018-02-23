@@ -7,7 +7,7 @@ pipeline {
               }
             }
         }
-}
+
     post {
       always {
         archiveArtifacts artifacts: 'MyGod', fingerprint: true
